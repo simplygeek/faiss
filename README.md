@@ -96,24 +96,26 @@ Faiss is MIT-licensed.
 
 
 
-
 ### Installing it for Mac OS 
 
 * brew install llvm
 * brew install openblas
 
-#### Set following variable to zshrc or bashrc 
+#### Set following variable to .zshrc or .bashrc 
 
 * export LDFLAGS="-L/usr/local/opt/openblas/lib"
 * export CPPFLAGS="-I/usr/local/opt/openblas/include"
 
-#### Installing Conda 
+####  Installation Instruction using Conda
 
 * brew cask install anaconda
-
-#### Set following variable to zshrc or bashrc 
-
-* export PATH="/usr/local/anaconda3/bin:$PATH"
+* add conda to the path by setting export PATH="/usr/local/anaconda3/bin:$PATH"
+* conda create --name conda_env python=3.6  [This will create virtual environment conda_env]
+* source your .bashrc or .zshrc file
+* conda activate conda_env 
+* Make sure to check your python version by running command: python --version 
+* conda install swig
+* conda install faiss-cpu -c pytorch
 
 
 

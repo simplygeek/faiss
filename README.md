@@ -92,3 +92,30 @@ You can report bugs, ask questions, etc.
 ## License
 
 Faiss is MIT-licensed.
+
+
+
+
+
+### Installing it for Mac OS 
+
+* brew install llvm
+* brew install openblas
+
+#### Set following variable to zshrc or bashrc 
+
+* export LDFLAGS="-L/usr/local/opt/openblas/lib"
+* export CPPFLAGS="-I/usr/local/opt/openblas/include"
+
+#### Installing Conda 
+
+* brew cask install anaconda
+
+#### Set following variable to zshrc or bashrc 
+
+* export PATH="/usr/local/anaconda3/bin:$PATH"
+
+
+
+
+
